@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>WELCOME PAGE</title>
+</head>
+<body>
+<h1 style="text-align:center;"> WELCOME YOU ALL </h1>
+<!-- block level link -- it is used to adding links to the images.i.e when the image is pressed ,it directly goes to link page-->
+<a href = "https://www.rubinabanu7.wordpress.com">
+<img src="system.webp" alt="keyboard image links to wordpress homepage"></a>
+
+<!-- img src(image source) specifies the path to the image presented in html file folder(we can  use images from any folder but if you are using the image from your html file presented folder means no need to give folder name at all,just give the image name) --alt(alternate text for image) is used to show the image description,if the image in src is not loaded or due to some reasons the image is not shown means ,it will show the alternate information on the webpage.-->
+
+<!-- if there are multiple images in a single webpage ,we can give title attribute in tag to know the reader regarding image information...when we touch the image,the cursor will show the information we given in title-->
+<img src="r.png" alt="r_letter_image"" title="R image is used here for logo">
+
+<!-- but if we need to show the title openly at the bottom of image to all users without moving the cursor ,we need to give figcaption tag under figure tag(for photo) -->
+<!-- Use a <figure> element to mark up a photo in a document, and a <figcaption> element to define a caption for the photo:>
+<figure>
+<img src="r.png" alt="r_letter_image"">
+<figcaption>logo of this website</figcaption>
+</figure>
+
+
+<!--a href = "https://www.rubinabanu7.wordpress.com"target="_blank"-->
+<!--img src="rubina.jpeg" alt=ownname definiton image links to wordpress homepage-->
+<a href = "https://www.google.com"target="_blank">
+<img src="rubina.jpeg" alt="ownname definiton image links to wordpress homepage"></a>
+<!-- the second image rubina is not showing in web page. since already a wordpress link is presented for system. we can delete the above or comment the above image and can load this rubina image on the webpage or we can use some other link to be displayed means it will show both the images so i changed wordpress link to google link >
+<!-- target attribute is used to provide the link of the image on another page instead of loading it in the same page-->
+
+<a href = "https://www.rubinabanu7.wordpress.com">
+<img src="system.webp" alt="keyboard image" width="500" height="600"></a>
+
+<!-- we can resize the image width and height of the imAGE in pixels to our needed size by using style attribute-->
+
+
+<a href = "https://www.google.com"target="_blank">
+<img src="rubina.jpeg" alt="ownname" style="width:600px;height:600px;"></a>
+
+<!-- mostly suggested thing is using style attribute,because it prevents the style sheets from changing the size of images(both width and height is included in single line of style separating by semicolon)-->
+<!--Note: Always specify the width and height of an image. If width and height are not specified, the web page might flicker (works irregular) while the image loads.-->
+
+<a href = "https://www.pothys.com"target="_blank">
+<img src="/home/rubinabanu/Documents/B28/education0/dress.jpg" alt="dress image links to facebook homepage" style="width:400px;height:400px;">
+</a>
+
+<!--IMAGES IN ANOTHER FOLDER -if we are using from any other folder we need to give the folder name in the src path>
+<!-- we are now going to modify the width and height of the image to our needed size-->
+
+
+<!--IMAGES on ANOTHER website/server-Some web sites point to an image on another server.
+
+To point to an image on another server, you must specify an absolute (full) URL in the src attribute-->
+<!--Notes on external images: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be removed or changed.-->
+
+
+<a href = "https://www.w3schools.com"target="_blank">
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools logo" style="width:400px;height:400px;">
+</a>
+
+<!--HTML allows animated GIFs:-->
+ <img src="birdfly.gif" alt="bird winging" style="width:200px;height:200px;"> 
+<!-- this gif file is within the html folder only so name is enough,if it present in any other folder we need to the path name or if it is presented in sub folder of html folder we need to specify only the subfolder(gif) name with file name(leonardo.gif).No need to give full path name (/home/rubinabanu/Documents/HTML5/gif)-->
+
+<a href = "https://en.wikipedia.org/wiki/Leonardo_DiCaprio" target="_blank">
+<img src="gif/leonardo.gif" alt="cheers" style="width:200px;height:200px;"> </a>
+
+<!--Image Floating:Use the CSS float property to let the image float to the right or to the left of a text using style attibute-->
+ <p><img src="round.gif" alt="round animation" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="round.gif" alt="round animation" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p> 
+
+<!-- now we are going to see how to link already created html file in to this html file-->
+<!-- here we are using only the file name index.html without the folder/location address since it is presented inside the same folder of one html file -->
+<a href="index.html" target="_blank">click here for my bio</a><br>
+
+<!-- this is known as relative path.....if the full address is given in the href means it is known as absolute path-->
+<a href="gif/tutorial_html.pdf" target="_blank">check my pdf file</a><br>
+<!-- pdf also can be attached and viewed on webpage-->
+<a href="pdf/html_beginner.pdf" target="_blank">check my beginner html pdf file</a><BR>
+<br>
+
+<!-- in webpages,if we click the link they will automatically download the pdf or some other application by the use of download attibute -->
+<a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" download="Firefox download">DOWNLOADING firefox</a>
+<br>
+<!-- for sending mail we can use address tag in html.....this tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.-->
+
+<!-- to add email link we need to use mail-->
+<address>
+<a href="mailto:rubina67banu@gmail.com">Send email to ME</a><br>
+
+<!-- to add mail with cc bcc subject and body,we must use ampersand symbol and %20 creates space-->
+<a href="mailto:rubina67banu@gmail.com?-cc=rubina7196banu@gmail.com&bcc=006rubinabanu@gmail.com&subject=Regarding%20query&body=I%20urgently%20need%20solution%20to%20this%20question%20"">Send email with subject body cc bcc</a>
+</address>
+
+<!-- we can give mail without giving address tag too-->
+<!-- HTML Validator: there is a html validator tool in https://validator.w3.org/ we can validate any website by giving its name...it will show the result-->
+
+
+<!-- we can use table in website,tr-table row,td-table data,caption is table title -->
+<table border=1>
+<tr>
+<caption>exam cell</caption>
+<td>first cell</td>
+<td>second cell</td>
+<td>third cell</td>
+<td>fourth cell</td>
+</tr>
+<tr>
+<td>first cell</td>
+<td>second cell</td>
+<td>third cell</td>
+<td>fourth cell</td>
+</tr>
+<tr>
+<td>first cell</td>
+<td>second cell</td>
+<td>third cell</td>
+<td>fourth cell</td>
+</tr>
+</table>
+
+
+</body>
+</html>
+
