@@ -1,0 +1,160 @@
+<!DOCTTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="kalki">
+<!-- meta means data about data and charset denotes language as utf-8 .this meta data will not shown in webpage.this will useful for seo search engine optimization when user entered this in net to check the data regarding this content in web.......facebook will use og property in meta in thie wbsite(ie open graph data)-->
+<title> welcome </title></head>
+<body>
+ <em>RubinaBanu</em>
+<p>I am a FUTURE SOFTWARE ENGINEER</p>
+<h1>I am learning development course</h1>
+<h2>I am learning java course</h2>
+<h3>I am learning html course</h3>
+<h4>I am learning css course</h4>
+<h5>I am learning sql course</h5>
+<h6>I am learning javascript course</h6>
+<a href="https://rubinabanu7.wordpress.com" title="search images" target="_blank">Welcome to google </a><br>
+<!-- a is attribute ,href is link ,title is the mouse hover information i.e when we pointing the cursor on the link it show the title as what we given,here i gave search images so it will show the title as search images when i pointed ut the mouse ,target is given as underscore blank i.e it opens a blank or new tab with the link which i given -->
+<!-- boolean attribute means attributes can be present or absent i.e true or false -->
+
+Enter text : <input type="text"><br>
+<!--if the text box needs to be disabled means we can use the tag disable,when we think that the user must not write anything in the box-->
+Enter text : <input type="text" disabled="disabled"><br>
+<!-- or we can simply give disabled too -->
+Enter text : <input type="text" disabled><br>
+<!-- br is line break--- to break the line without continuing in same line>
+<!-- to create symbols or special characters in web page use ampersand symbol....>greater than can be written as &gt;, <lesser than - &lt; ," quotation -&quot; ,' apostraphe or single quotes -&apos; , ampersand  as &amp; ,for heart symbol- type &hearts; ,for copyright symbol &copy; these are known as character entity references -->
+<hr>
+<!-- hr is known as horizontal rule or bar across the screen ie. it creates a line across it -->
+<p> I am born to win &amp; i will surely win </p> 
+<p> I am not &lt; than any one in this world and &copy; owned by me with love &hearts;</p>
+Education Details
+<ol> <!-- ordered list-list available in numbers -->
+<li>college</li> <!-- li means list index -->
+<li>HSC</li>
+<li>SSC</li>
+</ol>
+College Semester count
+<ul>  <!-- unordered list-list available in bullets -->
+<li>semester-1</li>
+<li>semester-2</li>
+<li>semester-3</li>
+<li>semester-4</li>
+</ul>
+
+<!-- combined list means list within the list. there may be unordered list within the ordered list (or) there may be ordered list within the unordered list-->
+Education Details
+<ol> 
+<li>college</li> 
+College Semester count
+<ul>
+<li>semester-1</li>
+<li>semester-2</li>
+<li>semester-3</li>
+<li>semester-4</li>
+</ul>
+<li>HSC</li>
+<li>SSC</li>
+</ol>
+
+Education details
+<ol type="I">  <!-- ordered list can also be ordered by using this ""type" attribute of giving capital i for ordering in roman letters instead of numbers-->
+<li>college</li> <!-- li means list index -->
+<li>HSC</li>
+<li>SSC</li>
+</ol>
+
+College Semester count
+<ul type="I">  <!-- unordered list can also be ordered by using this type attribute of giving capital i for roman letters-->
+<li>semester-1</li>
+<li>semester-2</li>
+<li>semester-3</li>
+<li>semester-4</li>
+</ul>
+
+Education details
+<ol type="i">  <!-- ordered list can also be ordered by using this ""type" attribute of giving small i for ordering in small roman letters instead of numbers-->
+<li>college</li> <!-- li means list index -->
+<li>HSC</li>
+<li>SSC</li>
+</ol>
+
+College Semester count
+<ul type="i">  <!-- unordered list can also be ordered by using this type attribute of giving small i for roman letters-->
+<li>semester-1</li>
+<li>semester-2</li>
+<li>semester-3</li>
+<li>semester-4</li>
+</ul>
+
+Education details
+<ol type="A">  <!-- ordered list can also be ordered by using this ""type" attribute of giving CAPITAL A for ordering in capital letters instead of numbers-->
+<li>college</li> <!-- li means list index -->
+<li>HSC</li>
+<li>SSC</li>
+</ol>
+
+College Semester count
+<ul type="A">  <!-- unordered list can also be ordered by using this type attribute of giving CAPITAL A for capital letters-->
+<li>semester-1</li>
+<li>semester-2</li>
+<li>semester-3</li>
+<li>semester-4</li>
+</ul>
+
+Education details
+<ol type="a">  <!-- ordered list can also be ordered by using this ""type" attribute of giving small a for ordering in small letters instead of numbers-->
+<li>college</li> <!-- li means list index -->
+<li>HSC</li>
+<li>SSC</li>
+</ol>
+
+College Semester count
+<ul type="a">  <!-- unordered list can also be ordered by using this type attribute of giving small a for small letters-->
+<li>semester-1</li>
+<li>semester-2</li>
+<li>semester-3</li>
+<li>semester-4</li>
+</ul>
+
+<dl><!-- dl is definition list .it is a list of terms and corresponding definitions in paragraph -->
+<dt>MY GOAL</dt> <!-- dt is definition title-->
+<dd><!-- dd is definition data-->
+I am really passionate about learning it technology.
+Will need to learn more and to achieve higher things in my life.
+
+</dd>
+</dl>
+
+<em>I worked for <strong>1.2 years</strong> </em> and <U>relieved</U>
+<!-- EM -ITALICS ,Strong-bold,U -underline -->
+
+<p>I am studying <abbr title="HyperTextMarkupLanguage"> HTML </abbr>to create web pages.
+<!-- abbr is abbreviation.if we touch the dotted line it will show the abbrevaition >
+
+<!-- super set -The <sup> tag defines superscript text. Superscript text appears half a character above the normal line -->
+<!-- The <sub> tag defines subscript text. Subscript text appears half a character below the normal line-->
+<p> I like water H<sub>2</sub>O. My birthday is on 7 <sup> th </sup> january.
+</p>
+
+
+<time datetime="2023-01-07 12:00:00">7 JAN 2022 12 AM</TIME>
+<time datetime="12:00 + 3:00">utc 12 am+ 3 hrs</time>
+
+
+<p>I am creating a blog for education purpose and its name is <a href="https://www.rubinabanu7.wordpress.com/">rubinabanu7 blog</a></p>
+<!-- a is known as anchor tag and href is hypertext reference : HTML links are hyperlinks. You can click on a link and jump to another document.-->
+
+<p>I am creating a blog <a href="https://www.rubinabanu7.wordpress.com/" title="It covers full stack development course">rubinabanu7 blog</a></p>
+<!-- here title makes tool tip or mouse hover.when mousetip is pointing on link name it shows title text which we given-->
+
+<a href="https://www.rubinabanu7.wordpress.com/" target="_blank">My own blog</a><br>
+<!-- this target attribute is used to get in to new page of my blog, instead of loading my blog link within the same page>
+
+<!-- now we are going to see how to link already created html file in to this html file-->
+<!-- here we are using only the file name one.html without the folder/location address since it is presented inside the same folder of index html file -->
+<a href="one.html">see multimedia images</a>
+
+</body>
+</html>
