@@ -1,0 +1,110 @@
+<html>
+<head>
+<!-- A favicon is a small image displayed next to the page title in the browser tab.You can use any image you like as your favicon. You can also create your own favicon on sites like https://www.favicon.cc    or https://www.favicon-generator.org   ...in this website we can create our own fav icon by uploading the needed images and can make suitable changes like color,size etc-->
+<!--Tip: A favicon is a small image, so it should be a simple image with high contrast.-->
+<!--To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".
+Next, add a <link> element to your "index.html" file, after the <title> element, like this
+<title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+
+
+<!--The rel attribute specifies the relationship between the current document and the linked document.
+Only used if the href attribute is present.-->
+
+<!-- The rel attribute can be used on the following elements:
+Elements 	Attribute
+<a> 	     rel
+<area> 	     rel
+<link> 	     rel   (icon will come under this link element of rel attribute)
+<form> 	     rel              -->
+
+<title>RubinaPage</title>
+<link rel="icon" type="image/x-icon" href="r.png">
+<!-- we can also give like this in href as image name r.png itself instead of changing favicon.ico and give -->
+<!--       <link rel="icon" type="image/x-icon" href="favicon.ico">.......it can be given like this.the image name should be saved as favicon.ico          -->
+
+
+
+<!--The <mark> tag defines text that should be marked or highlighted.--></head>
+<body>
+<p>I like <mark>Icecreams</mark></p>
+
+<!-- The HTML <video> element is used to show a video on a web page.  
+The controls attribute adds video controls, like play, pause, and volume.
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element. 
+To start a video automatically, use the autoplay attribute.
+Add muted after autoplay to let your video start playing automatically (but muted)
+File Format 	Media Type
+MP4 	        video/mp4
+WebM 	        video/webm
+Ogg 	        video/ogg
+The HTML DOM defines methods, properties, and events for the <video> element.
+This allows you to load, play, and pause videos, as well as setting duration and volume.
+There are also DOM events that can notify you when a video begins to play, is paused, etc. 
+Tag 	    Description
+<video> 	Defines a video or movie
+<source> 	Defines multiple media resources for media elements, such as <video> and <audio>
+<track> 	Defines text tracks in media players -->
+
+
+
+<video width="450" height="450" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+<!-- it automatically plays video but not having control button of play pause etc.it wil automatically play the video with sound.but i uploaded soundless video here no sound appears here-->
+<video autoplay >
+<source src="smiling.mp4" type="video/mp4">
+</video>
+
+<!-- it automatically plays video also having control button of play pause etc but we intentionally give muted not to play sound-->
+<video  width="450" height="450" controls autoplay muted >
+<source src="road.mp4" type="video/mp4">
+</video>
+
+<!-- we can use loop to play the video again and again-->
+<video  width="450" height="450" controls autoplay loop muted >
+<source src="road.mp4" type="video/mp4">
+</video>
+
+<!--Author thinks that the video should NOT be loaded when the page loads,then he needs to be give none-->
+<video width="450" height="450" controls autoplay loop preload="none">
+<source src="12345.mp4" type="video/mp4">
+</video>
+
+<!--Author thinks that the video should be loaded when the page loads,then he needs to be give auto-->
+<video width="450" height="450" controls autoplay preload="auto">
+<source src="12345.mp4" type="video/mp4">
+</video>
+
+<!-- here poster is same as youtube thumbnail image,we can add any image with our video it will show in front of the video but it is not present in within the video--><!-- it is not working-->
+<video width="450" height="450" controls>
+<source src="smiling.mp4" type="video/mp4" poster="round.jpeg">
+</video>
+
+<!-- The HTML <audio> element is used to play an audio file on a web page
+To play an audio file in HTML, use the <audio> element -->
+
+ <audio controls>
+ <source src="5sec.mp3" type="audio/mpeg">
+ </audio> 
+
+<!--To start an audio file automatically, use the autoplay attribute-->
+
+ <audio controls autoplay>
+ <source src="5sec.mp3" type="audio/mpeg">
+ </audio> 
+
+<!--Add muted after autoplay to let your audio file start playing automatically (but muted)-->
+
+ <audio controls autoplay muted>
+ <source src="5sec.mp3" type="audio/mpeg">
+ </audio> 
+
+
+
+</body>
+</html>
+
