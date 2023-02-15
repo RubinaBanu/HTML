@@ -1,0 +1,422 @@
+<html>
+<head>
+<title>tables</title>
+</head>
+<body>
+<!-- now we are going to see how to create tables by giving table tag,tr-table row,caption-title for table,th-tableheader(heading),td-tabledata(element in table cell),surely we need to give border attribute otherwise it dont look like a table,if we need we can mention width and height of table otherwise not needed,The colspan attribute defines the number of columns a table cell should span.rowspan attribute defines the number of columns a table cell should span-->
+<table border width="60%" height="40%">
+<caption>Personal Information of student</caption>
+<tr>
+<th>S.NO</th>
+<th>Name</th>
+<th>Education</th>
+<th>BLODGROUP</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Rubina</td>
+<td>B.E</td>
+<td>O+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nisha</td>
+<td>M.E</td>
+<td>A+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mani</td>
+<td>B.C.A</td>
+<td>B+</td>
+</tr>
+<br>
+<br>
+
+<table border width="60%" height="40%">
+<caption>Details of employee</caption>
+<tr>
+<th>S.NO</th>
+<th>Name</th>
+<th>Education</th>
+<th>BLODGROUP</th>
+<th colspan="2">PH.NO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Rubina</td>
+<td>B.E</td>
+<td>O+</td>
+<td>9602663665747</td>
+<td>76475674558347</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nisha</td>
+<td>M.E</td>
+<td>A+</td>
+<td>960266</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mani</td>
+<td>B.C.A</td>
+<td>B+</td>
+<td>9602663</td>
+</tr>
+</table>
+
+<table border width="50%" height="50%">
+<caption>INformation of candidate</caption>
+<tr>
+<th>S.NO</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Candidate</th>
+<td>Rubina</td>
+</tr>
+<tr>
+<th>Education</th>
+<td>B.E</td>
+</tr>
+<tr>
+<th>BLODGROUP</th>
+<td>O+</td>
+</tr>
+<tr>
+<th rowspan="2">PH.NO</th>
+<td >9602663665747</td>
+</tr>
+<tr>
+<td>76475674558347</td>
+</tr>
+</table>
+<!--The <colgroup> tag specifies a group of one or more columns in a table for formatting.
+The <colgroup> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row-->
+
+
+<table border>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+<tr>
+<th>S.NO</th>
+<th>Name</th>
+<th>Education</th>
+<th>BLODGROUP</th>
+<th colspan="2">PH.NO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Rubina</td>
+<td>B.E</td>
+<td>O+</td>
+<td>9602663665747</td>
+<td>76475674558347</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nisha</td>
+<td>M.E</td>
+<td>A+</td>
+<td>960266</td>
+<td>7647</td>
+</tr>
+</table>
+<br>
+<!-- using bg color ATTRIBUTE we can give color to full table or if we need we can apply color to single cell of table -->
+
+<table border=1 bgcolor="blue">
+<tr>
+<th>S.NO</th>
+<th>Name</th>
+<th>Education</th>
+<th>BLODGROUP</th>
+<th colspan="2">PH.NO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Rubina</td>
+<td>B.E</td>
+<td>O+</td>
+<td>9602663665747</td>
+<td>76475674558347</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nisha</td>
+<td>M.E</td>
+<td>A+</td>
+<td>960266</td>
+<td>7647</td>
+</tr>
+</table>
+
+<br>
+<table border=1 >
+<tr>
+<th>S.NO</th>
+<th>Name</th>
+<th>Education</th>
+<th>BLODGROUP</th>
+<th colspan="2">PH.NO</th>
+</tr>
+<tr>
+<td bgcolor="orange">1</td>
+<td>Rubina</td>
+<td>B.E</td>
+<td>O+</td>
+<td>9602663665747</td>
+<td>76475674558347</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nisha</td>
+<td bgcolor="orange">M.E</td>
+<td>A+</td>
+<td>960266</td>
+<td>7647</td>
+</tr>
+</table>
+<br>
+<br>
+<table border>
+  
+<tr>
+<th bgcolor="orange">S.NO</th>
+<th bgcolor="orange">Name</th>
+<th bgcolor="orange">Education</th>
+<th bgcolor="orange">BLODGROUP</th>
+<th colspan="2" bgcolor="orange">PH.NO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Rubina</td>
+<td>B.E</td>
+<td>O+</td>
+<td>9602663665747</td>
+<td>76475674558347</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nisha</td>
+<td >M.E</td>
+<td>A+</td>
+<td>960266</td>
+<td>7647</td>
+</tr>
+</table>
+
+<!-- HTML ENTITIES-->
+<!--Some characters are reserved in HTML.
+
+If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+
+Character entities are used to display reserved characters in HTML.
+
+A character entity looks like this:
+&entity_name;
+
+OR
+&#entity_number; --> 
+<!--To display a less than sign (<) we must write: &lt; or &#60;-->
+<!--A commonly used entity in HTML is the non-breaking space: &nbsp;(GIVES SINGLE SPACE in between words)
+
+A non-breaking space is a space that will not break into a new line.-->
+ 
+
+<p>A diacritical mark is a "glyph" added to a letter.
+
+Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.
+
+Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+
+Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page.
+</p>
+
+<p>A diacritical mark is a "glyph" added to a letter.
+
+Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.&nbsp;
+
+Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+
+Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page.
+</p>
+
+<!-- ensp -gives double space-->
+<p>A diacritical mark is a "glyph" added to a letter.
+
+Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.&ensp;
+
+Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+
+Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page.
+</p>
+
+<!-- emsp-4 space-->
+<p>A diacritical mark is a "glyph" added to a letter.
+
+Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.&emsp;
+
+Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+
+Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page.
+</p>
+<!-- some additional entities are listed as 
+SYMBOL 	Description 	           Entity Name 	Entity Number 	
+	    non-breaking space 	            &nbsp; 	&#160; 	
+< 	    less than 	                    &lt; 	&#60; 	
+> 	    greater than 	                &gt; 	&#62; 	
+& 	    ampersand 	                    &amp; 	&#38; 	
+" 	    double quotation 	            &quot; 	&#34; 	
+' 	    single quotation (apostrophe) 	&apos; 	&#39; 	
+¢ 	    cent 	                        &cent; 	&#162; 	
+£ 	    pound                         	&pound; &#163; 	
+¥ 	    yen 	                        &yen; 	&#165; 	
+€ 	    euro 	                        &euro; 	&#8364; 	
+© 	    copyright 	                    &copy; 	&#169; 	
+® 	    registered trademark 	        &reg; 	&#174;  -->
+<!--NESTED TABLE-->
+
+<table border=1>
+  <tr>
+<th>content</th>
+<th>signals</th>
+</tr>
+<tr>
+    <td>
+      fruits and table
+    </td>
+    <td>programming skills
+      <table border=1>
+        <tr>
+          <td>Angular</td>
+          <td>React</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Python</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>This cell contains a list
+      <ul>
+        <li>apples</li>
+        <li>bananas</li>
+        <li>pineapples</li>
+      </ul>
+    </td>
+    <td>HELLO</td>
+  </tr>
+</table>
+
+
+
+
+<!-- check boxes-->
+<!-- Always add the <label> tag for best accessibility practices! -->
+<!-- The checkbox is shown as a square box that is ticked (checked) when activated.
+
+Checkboxes are used to let a user select one or more options of a limited number of choices.
+The <input type="checkbox"> defines a checkbox.   -->
+
+<h1>course needed</h1>
+<p>select below</p>
+<label class="container">Java
+<input type="checkbox" checked="checked">
+<!-- checked = checked gives default tick in box-->
+</label>
+<label class="container">Python
+<input type="checkbox" id="p">
+</label>
+<label class="container">SQL
+<input type="checkbox" id="s">
+</label>
+<label class="container">Datascience
+<input type="checkbox" >
+</label>
+
+
+<!-- radio button-->
+<h1>course needed</h1>
+<p>select below</p>
+<label class="container">Java
+<input type="radio" checked="checked">
+<!-- checked = checked gives default tick in box-->
+</label>
+<label class="container">Python
+<input type="radio" id="p">
+</label>
+<label class="container">SQL
+<input type="radio" id="s">
+</label>
+<label class="container">Datascience
+<input type="radio" >
+</label>
+
+<!--The <input type="text"> defines a text field (characters are unmasked).-->
+<br>
+ <label for="text">username:</label>
+<input type="text" id="u" name="rubina" value="RubinaBanu"> 
+
+<!-- The <input type="password"> defines a password field (characters are masked).
+
+Note: Any forms involving sensitive information like passwords should be served over HTTPS.
+
+Tip: Always add the <label> tag for best accessibility practices!-->
+<br>
+<label for="password">password:</label>
+<input type="password" id="ped" name="rubina" value="RubinaBanu"> 
+
+<br>
+<label for="password">password:</label>
+<input type="password" id="ped" name="rubina" > 
+
+
+
+<!--The <select> element is used to create a drop-down list.
+
+The <select> element is most often used in a form, to collect user input.
+
+The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+
+The id attribute is needed to associate the drop-down list with a label.
+
+The <option> tags inside the <select> element define the available options in the drop-down list.
+
+Tip: Always add the <label> tag for best accessibility practices!-->
+<br>
+ <label for="cars">Choose a car:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
+<br>
+<!-- multiple attribute makes us to select one from showing multiple values.it shows all the value outside itself-->
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars" size="4 "multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
+
+<br>
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+<option value="sel">Select cars</option>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
+
+</body>
+</html>
